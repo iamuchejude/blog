@@ -6,7 +6,9 @@ export default () => (
   <header className="clear">
     <div className="left logo">
       <Link href="/">
-        <img src='/static/images/logo-dark.png' alt="Uche Jude" />
+        <a>
+          <img src='/static/images/logo-dark.png' alt="Uche Jude" />
+        </a>
       </Link>
     </div>
 
@@ -16,10 +18,10 @@ export default () => (
 
     <style jsx>{`
       header {
-        height: 60px;
+        height: 70px;
         width: 100vw;
         padding: 0 60px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.02);
         position: fixed;
         top: 0;
         left: 0;

@@ -5,17 +5,17 @@ export default () => (
     <ul>
       <li>
         <Link href="/">
-          Home
+          <a>Home</a>
         </Link>
       </li>
       <li>
         <Link href="/bookmarked">
-          Bookmarked
+          <a>Bookmarked</a>
         </Link>
       </li>
       <li>
         <Link href="/newsletter">
-          Newsletter
+          <a>Newsletter</a>
         </Link>
       </li>
     </ul>
