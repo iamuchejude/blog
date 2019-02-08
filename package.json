@@ -1,0 +1,32 @@
+{
+  "name": "iamuchejude",
+  "version": "1.0.0",
+  "description": "Seat of my thoughts",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamuchejude/blog.git"
+  },
+  "keywords": [
+    "Blog",
+    "Thoughts",
+    "Uche",
+    "Jude"
+  ],
+  "author": "Uche Jude <iamuchejude@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamuchejude/blog/issues"
+  },
+  "homepage": "https://github.com/iamuchejude/blog#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  }
+}
