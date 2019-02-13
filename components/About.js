@@ -42,17 +42,18 @@ export default () => (
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        border: 1px solid #f1f1f1;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.03);
       }
 
       #about h3 {
-        font-size: 1.8em;
+        font-size: 1.6em;
         font-weight: 100;
         margin: 3px 0;
       }
 
       #about h3 span {
         font-weight: 500;
-        color: #191970;
       }
 
       #about img {

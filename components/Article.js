@@ -23,7 +23,7 @@ export default ({ article }) => (
 
     <style jsx>{`
       .article:not(:first-child):not(:last-child) {
-        margin: 35px 0;
+        margin: 40px 0;
       }
 
       .article .title {
