@@ -29,10 +29,8 @@ export default () => (
 
     <style jsx>{`
       footer {
-        width: 100vw;
         text-align: center;
-        padding: 20px 50px;
-        border-top: 1px solid rgba(0, 0, 0, 0.02);
+        padding: 20px 25px;
       }
       
       footer > div {

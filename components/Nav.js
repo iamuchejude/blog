@@ -2,6 +2,11 @@ import Link from 'next/link';
 
 export default () => (
   <nav>
+    <a href="javascript:void(0)">
+      <div></div>
+      <div></div>
+      <div></div>
+    </a>
     <ul>
       <li>
         <Link href="/">

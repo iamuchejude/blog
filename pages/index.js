@@ -1,7 +1,10 @@
 import Layout from '../components/Layout';
+import Articles from '../components/Articles';
+import About from '../components/About';
 
 export default () => (
-  <Layout>
-    <h1>Hello world!</h1>
+  <Layout title="Uche Jude">
+    <About />
+    <Articles />
   </Layout>
 );
