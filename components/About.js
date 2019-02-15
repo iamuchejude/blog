@@ -59,6 +59,21 @@ export default () => (
       #about img {
         width: 300px;
       }
+
+      @media only screen and (max-width: 600px) {
+        #about div.photo {
+          display: none;
+          width: 0;
+        }
+
+        #about > div div:last-child {
+          width: 100%;
+        }
+
+        #about > div div:last-child h3 {
+          font-size: 1.3em;
+        }
+      }
     `}</style>
   </div>
 )

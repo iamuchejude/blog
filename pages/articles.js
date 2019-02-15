@@ -3,6 +3,7 @@ import {
   useEffect
  } from 'react';
 import Layout from "../components/Layout";
+import Loading from '../components/Loading';
 
 import ArticleHeader from "../components/ArticleHeader";
 import ArticleBody from "../components/ArticleBody";
@@ -17,10 +18,18 @@ export default ({ url }) => {
     });
   });
 
+  useEffect(() => void setLoading(false));
+
   return (
     <Layout>
-      <ArticleHeader article={ article } />
-      <ArticleBody article={ article } />
+      { loading ? (
+        <Loading />
+      ) : (
+        <>
+          <ArticleHeader article={ article } />
+          <ArticleBody article={ article } />
+        </>
+      )}
     </Layout>
   )
 }

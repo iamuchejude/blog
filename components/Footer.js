@@ -32,7 +32,7 @@ export default () => (
     <style jsx>{`
       footer {
         text-align: center;
-        padding: 20px 25px 15px;
+        padding: 25px 25px 15px;
         border-top: 1px solid rgba(0, 0, 0, 0.02);
         margin-top: 20px;
         min-height: 70px;
@@ -60,6 +60,12 @@ export default () => (
 
       nav ul li:first-child {
         padding: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        footer > div {
+          float: none;
+        }
       }
     `}</style>
   </footer>

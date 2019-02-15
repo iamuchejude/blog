@@ -9,7 +9,7 @@ export default ({ article: { title } }) => (
 
     <style jsx>{`
       .header {
-        padding: 40px 10px 15px 10px;
+        padding: 40px 0 15px 0;
         text-align: center;
       }
 
