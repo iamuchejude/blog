@@ -9,7 +9,7 @@ export default ({ title, children }) => (
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>{ title || 'X' }</title>
+      <title>{ title || 'Uche Jude - Seat of my thoughts' }</title>
       <link rel="shortcut icon" href="/static/images/favicon.ico" />
     </Head>
 

@@ -10,12 +10,13 @@ import {
 export default ({ article }) => (
   <div className="article">
     <h4 className="title">
-      <Link as={ `/articles/${sluggify(article.title)}` } href={ `/articles?id=${article.id}` }>
+      <Link href={ `/articles?id=${article.id}` }>
+      {/* <Link as={ `/articles/${sluggify(article.title)}` } href={ `/articles?id=${article.id}` }> */}
         <a>{article.title}</a>
       </Link>
     </h4>
     <div className="info">
-      { prettifyTime(article.createdAt) } - Jude, School
+      Posted in <a>Javascript</a> on <span>5th of March, 2019</span>.
     </div>
     <p className="snippet">
       { generateSnippet(article.content) }
@@ -29,11 +30,23 @@ export default ({ article }) => (
       .article .title {
         font-size: 1.4em;
         margin: 0; 
+        font-weight: 700;
       }
 
       .article .info {
         font-size: .9em;
+        font-weight: 100;
         margin: 8px 0;
+        text-decoration: italize;
+      }
+
+      .article .info a,
+      .article .info span {
+        font-weight: 300;
+      }
+      
+      .article .info a:hover {
+        cursor: pointer;
       }
 
       .article .title a {
@@ -41,11 +54,13 @@ export default ({ article }) => (
       }
 
       .article .title a:hover {
-        color: #191970;
+        font-weight: 700;
+        transition: .5s ease-in-out;
       }
 
       .article .snippet {
-        font-weight: 100;
+        font-weight: 300;
+        line-height: 1.7em;
       }
     `}</style>
   </div>

@@ -1,4 +1,4 @@
-import { FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaHeart } from 'react-icons/fa';
 
 export default () => (
   <footer className="clear">
@@ -16,11 +16,6 @@ export default () => (
             </a>
           </li>
           <li>
-            <a href="https://github.com/iamuchejude" target="_blank">
-              <FaYoutube />
-            </a>
-          </li>
-          <li>
             <a href="mailto: iamuchejude@gmail.com" target="_blank">
               Contact
             </a>
@@ -30,7 +25,7 @@ export default () => (
     </div>
     <div className="right">
       <p>
-        With love from <a href="https://iamuchejude.com" target="_blank">Uche Jude</a>
+        Created with <FaHeart /> by <a href="https://iamuchejude.com" target="_blank">Uche Jude</a>
       </p>
     </div>
 
@@ -60,7 +55,7 @@ export default () => (
       }
 
       nav ul li:not(:last-child) a {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       nav ul li:first-child {
