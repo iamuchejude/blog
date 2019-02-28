@@ -77,7 +77,7 @@ export default ({ title, children }) => (
       }
 
       main {
-        padding: 0 25px;
+        padding: 0 30px;
       }
     `}</style>
   </div>

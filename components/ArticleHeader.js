@@ -29,6 +29,16 @@ export default ({ article: { title } }) => (
       .info span {
         font-weight: 400;
       }
+
+      @media only screen and (max-width: 600px) {
+        .header {
+          padding-top: 20px;
+        }
+        
+        .title {
+          font-size: 1.4em;
+        }
+      }
     `}</style>
   </div>
 );

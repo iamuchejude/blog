@@ -1,4 +1,9 @@
 import Link from 'next/link';
+import {
+  GoHome,
+  GoTag,
+  GoBook,
+} from 'react-icons/go';
 
 export default () => (
   <nav>
@@ -13,17 +18,26 @@ export default () => (
     <ul>
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a>
+            <span><GoHome /></span>
+            <span>Home</span>
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/bookmarked">
-          <a>Bookmarked</a>
+          <a>
+            <span><GoTag /></span>
+            <span>Bookmarked</span>
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/newsletter">
-          <a>Newsletter</a>
+          <a>
+            <span><GoBook /></span>
+            <span>Newsletter</span>
+          </a>
         </Link>
       </li>
     </ul>
@@ -31,26 +45,6 @@ export default () => (
     <style jsx>{`
       ul {
         list-style: none;
-      }
-
-      #harmbuger {
-        width: 30px;
-        cursor: pointer;
-        display: none;
-      }
-
-      #harmbuger div {
-        border: 1px solid #000;
-        background: #000;
-        width: 100%;
-        margin: 2px 0;
-        height: 3px;
-        display: block;
-        float: right;
-      }
-
-      #harmbuger div:nth-child(2) {
-        width: 75%;
       }
 
       ul li {
@@ -66,13 +60,28 @@ export default () => (
         padding-left: 0;
       }
 
+      ul li a {
+        font-weight: 300;
+      }
+
+      ul li a span:last-child {
+        display: block;
+        font-weight: 300;
+      }
+
+      ul li a span:first-child {
+        display: none;
+        font-size: 1.4em;
+        font-weight: 300;
+      }
+
       @media only screen and (max-width: 600px) {
-        nav ul {
+        ul li a span:last-child {
           display: none;
         }
 
-        #harmbuger {
-          display: inline-block;
+        ul li a span:first-child {
+          display: block;
         }
       }
     `}</style>
